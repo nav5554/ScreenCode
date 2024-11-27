@@ -18,6 +18,7 @@ class GraphicsTest(SampleBase):
         while(j == 0):
           #Every iteration of the for loop the block shifts one pixel
           #Goes up to 26 because screen is 32 pixels wide but block is 5 pixels wide so 32-5 = 27
+          #Blocks are created with 5 DrawLine() methods making a 5x5 block
              for i in range(27):
                  graphics.DrawLine(canvas, 0, i, 5, i, red)
                  graphics.DrawLine(canvas, 0, i+1, 5, i+1, red)
